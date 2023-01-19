@@ -1,0 +1,437 @@
+
+
+* {
+	box-sizing: border-box;
+
+	margin: 0;
+	font-weight: 200;
+	user-select: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+body, html {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	/* flex-direction: column; */
+	align-items: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	background-color: #000000;
+  
+	color: #ffffff;
+}
+
+h1#title {
+	font-weight: 400;
+	font-size: 25px;
+}
+
+p#sub {
+	opacity: 0.7;
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.main {
+	box-shadow: 20px 18px 13px 3px rgb(0 0 0 / 40%);
+	border-radius: 40px;
+	display: flex;
+	transform: scale(0.85);
+}
+.iphone {
+	border-radius: 40px;
+	width: 390px;
+	height: 844px;
+
+	box-shadow: 0 0 0px 4.34px #515056;
+	border: 10px solid #000000;
+	
+
+ 
+	z-index: 2;
+
+  
+}
+
+
+.iphone .inner {
+	width: 100%;
+	height: 100%;
+	border-radius: 40px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	bottom: 5px;
+	transition-duration: 0.4s;
+}
+
+.iphone .inner .top {
+	display: flex;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.iphone .inner .top > * {
+	/* border: 2px solid red; */
+	height: 30px;
+}
+
+.iphone .inner .left, .iphone .inner .right {
+	padding-top: 8px;
+	width: 83px;
+	text-align: center;
+}
+
+.iphone .inner .top .center {
+	/* flex-grow: 2; */
+	width: 209px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #000002;
+	display: flex;
+}
+
+.iphone .inner .top .center .mic {
+	box-shadow: inset 0px -3px 3px 0px rgba(255, 255, 255, 0.2);
+	height: 8px;
+	width: 50px;
+	/* margin-left: auto; */
+	/* margin-right: auto; */
+	position: relative;
+	left: 60px;
+	top: 5px;
+	border-radius: 20px;
+}
+
+.iphone .inner .top .center .cam {
+	border-radius: 50%;
+	/* background-color: #2d4d76; */
+	width: 10px;
+	height: 10px;
+	box-shadow: inset 0px -3px 2px 0px rgb(45, 77, 118);
+	position: relative;
+	top: 5px;
+	left: 80px;
+}
+
+.iphone .inner .top .right {
+	display: flex;
+	gap: 5px;
+}
+
+
+
+
+.iphone .inner .top .right .cellular {
+	/* color: #ffffff; */
+	margin-left: 7px;
+  max-width: 25px;
+  max-height: 18px;
+	
+}
+
+.iphone .inner .top .right .battery, .iphone .inner .top .right .wifi {
+	position: relative;
+	top: 3px;
+}
+
+
+.iphone .inner .top .right .wifi {
+	width: 18px;
+	height: 13px;
+}
+.iphone .inner .top .right .battery {
+	width: 25px;
+	height: 13px;
+}
+
+
+
+
+
+.iphone .inner .home {
+	border-radius: 20px;
+	width: 170px;
+	height: 6.64px;
+	margin: auto;
+	margin-bottom: 10.62px;
+	background-color: #fffcff; 
+	z-index: 2;
+	animation: up 4s infinite;
+	position: relative;
+	cursor: pointer;	
+}
+.item{
+  position: absolute;
+  z-index: 5;
+  left: 50px;
+  top: 50px;
+
+}
+
+.plus{
+  color:  #0A8AFF;
+  position: absolute;
+  z-index: 5;
+  left: 290px;
+  top: 0px;
+  font-size: 40px;
+
+  
+}
+.tri{
+	color:  #0A8AFF;
+	position: absolute;
+	z-index: 100;
+	left: 300px;
+	margin-top: 10px;
+	font-size: 20px;
+  
+	
+  }
+.navcreate{
+	position: absolute;
+	z-index: 5;
+	left: 30px;
+	top: 60px;
+	display: flex;
+	justify-content: space-between;
+	width: 340px;
+}
+.infonav{
+	position: absolute;
+	z-index: 5;
+	left: 30px;
+	top: 60px;
+	text-align: center;
+}
+.imginfo{
+	max-width: 150px;
+	position: relative;
+	left: 100px;
+	top: 50px;
+}
+.ainfo{
+	position: relative;
+	right:5px;
+	top: 145px;
+	color:  #0A8AFF;
+	font-weight: 500;
+	
+
+}
+
+.av{
+	right:5px;
+	top: 2px;
+	z-index: 500;
+}
+.inputform{
+	position: absolute;
+	z-index: 5;
+	left: 3px;
+	top: 310px;
+	width: 340px;
+	text-align: center;
+}
+.inp{
+	width: 385px;
+	height: 45px;
+	border: none;
+	color: rgb(134, 132, 132);
+	font-size: 18px;
+	font-weight: 300;
+	background-color: #1f2025;
+	padding: 15px;
+	border-bottom: rgb(70, 69, 69) 1px solid;
+}
+.inp:focus{
+	background-color: #1f2025;
+}
+.last{
+	border: none;
+}
+.btnnav{
+	color:  #0A8AFF;
+	font-weight: bold;
+	z-index: 500;
+	
+
+
+}
+.v{
+	border: none;
+	background: transparent;
+}
+.titleapp{
+  position: absolute;
+  z-index: 5;
+  right: 220px;
+  top: 80px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.time{font-size: 15px;
+font-weight: bold;}
+.serach{
+  position: absolute;
+  z-index: 5;
+  right: 20px;
+  top: 135px;
+  font-size: 20px;
+  font-weight: 700;
+  max-width: 350px !important;
+  max-height: 40px !important;
+  border-radius: 10px;
+  background-color: #1f2025 ;
+  border: none !important;
+  color: white;
+
+}
+
+.serach:focus{
+  background-color: #1f2025 !important ;
+  color: white !important;
+  font-weight: 500;
+}
+
+.line{
+  position: absolute;
+  z-index: 5;
+  right: 20px;
+  top: 190px;
+  
+  font-weight: 100;
+
+  border-bottom: rgb(70, 69, 69) 1px solid;
+  width: 350px;
+  height: 1px;
+  background-color:transparent;
+}
+.linee::after{
+  content: "";
+  border-bottom: rgb(70, 69, 69) 1px solid;
+  width: 350px;
+  height: 1px;
+  z-index: 200;
+  background-color:transparent;
+  position: absolute;
+}
+.linee{
+  -webkit-overflow-scrolling: touch;
+  display: flex !important;
+  justify-content: space-between;
+}
+.infouser{
+  position: absolute;
+  z-index: 5;
+  right: 140px;
+  top: 200px;
+  display: flex !important;
+
+}
+.imgprofile{
+  max-width: 700px;
+  max-height: 60px;
+  border-radius:50% ;
+  margin-right: 20px;
+  border: none;
+}
+.infouser div h2{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+.infouser div p{
+  color: grey;
+  margin-top: -8px;
+}
+.contunt{
+  position: absolute;
+  right: 20px;
+  top: 270px;
+  z-index: 100;
+
+  width: 350px;
+  height: 550px;
+
+overflow: hidden;
+
+}
+
+.tt{
+  font-size: 70px;
+}
+
+.logox{
+  color: red;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.linee h1{
+  padding: 10px 5px;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.homee {
+  position: absolute;
+  right: 100px;
+  top: 810px;
+	border-radius: 20px;
+	width: 170px;
+	height: 6.64px;
+	margin: auto;
+	margin-bottom: 10.62px;
+	background-color: #fffcff; 
+	
+	animation: up 4s infinite;
+	
+	cursor: pointer;	
+}
+
+
+@media only screen and (max-width: 500px) {
+
+	html, body {
+		overflow: hidden;
+	}
+
+	.main {
+		transform: scale(0.7);
+	}
+
+	.iphone .inner .content .top {
+		height: 70px !important;
+	}
+
+	
+
+	.iphone .inner .content .bottom .main {
+    position: relative !important;
+    left: -100px !important;
+    width: 150% !important;
+    bottom: 20px !important;
+		gap: 140px !important;
+	}
+
+	
+	
+
+	
+
+	
+}
