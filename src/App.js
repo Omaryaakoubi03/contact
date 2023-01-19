@@ -6,6 +6,8 @@ function App() {
   
   const [data,setdata]=useState([
     {id:Math.random(),nom:"omar" ,tel:"0626618590",ville:"tanger"},
+    {id:Math.random(),nom:"ahmed" ,tel:"0665897452",ville:"fes"},
+    {id:Math.random(),nom:"karim" ,tel:"0606755588",ville:"maknas"},
     
   ])
 
